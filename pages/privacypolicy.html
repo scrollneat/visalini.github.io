@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blooger</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <!-- <link rel="stylesheet" href="./css/aos.css"> -->
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="/css/Style.css">
+
+    <style>
+        *{
+            padding:0;
+            box-sizing: border-box;
+            margin: 0;
+        }
+        main{
+            background-color: #f5f5f5;
+        }
+        h1{
+            color:#000;
+            font-size:1.6rem;
+            text-align: center;
+        }
+        .some{
+            text-align: left;
+            color:#0000;
+        }
+                
+        .heading{
+            min-width: 1px;
+            /* text-indent: 1rem; */
+            color:#000;
+            text-decoration-line: underline;
+            /* color:red;
+            display:flex;
+            flex-direction: column;
+            align-items: left;
+            justify-content: left; */
+        }
+        .anchor {
+         font-size: 2vh;
+        }
+        .list {
+            list-style-type: disc;   
+         }
+        section{
+            /* padding: 2rem 0; */
+            margin-left:10vh;
+            margin-right: 10vh;
+        }
+        .main-heading{
+            padding:2rem;
+        }
+         .paragraph{
+             min-width: 1px;
+            /* margin: 0 3rem; */
+            text-align: justify;
+            display:flex;
+            flex-direction: column; 
+         
+             /* justify-content: center;
+            align-items: center; */
+        }
+        .home-anchor{
+            font-size: 3vh;
+        }
+        .anchor:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        .home-anchor:hover{
+            color:red;
+            text-decoration: underline;
+        }
+        .not-for-use{
+            padding-bottom: 3rem;
+            background-color: #f5f5f5;      
+        }
+        .head-1:hover{
+            text-decoration:underline; 
+            cursor: pointer;
+        }
+        .move-up span :hover{
+            color:white;
+        }
+        .something:hover {
+            color:red;
+            text-decoration: underline;
+        }
+        .footer-icons{
+            padding: 1rem;
+        }
+        /* section{
+            border:5px solid red;
+            height:auto;
+            position:relative;
+            /* height:50vh;
+            display:flex;
+            align-items: center;
+            justify-content: center; */
+        /* }
+        .container{
+            border: 5px solid red;
+            max-width:auto;
+            width:100%;
+            
+            height:50vh;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            position:absolute;
+        }
+         */ 
+    </style>
+</head>
+
+<body>
+
+    <!-- ----------------------------  Navigation ---------------------------------------------- -->
+<header>
+    <div class="container">
+        <input type="checkbox" name="" id="check">
+        
+        <div class="logo-container">
+            <h3 class="logo" id="top">SCROLL<span>NEAT.COM</span></h3>
+        </div>
+
+        <div class="nav-btn">
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link" style="--i: .6s">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-link" style="--i: .85s">
+                        <a href="#">Categories<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Motivation</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Health</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Science & Technology</a>
+                                    <!-- 
+                                            
+                                                    -->
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Finance</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Random</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.1s">
+                        <a href="#">Archives<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="/pages/contact.html">Contact us</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/pages/privacypolicy.html">Privacy Policy</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/pages/terms&andcondition.html">Terms & Condition</a>
+                                    <!-- 
+                                           
+                                                       
+                                            
+                                    </div> -->
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/pages/disclaimer.html">Disclaimer</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.35s">
+                        <a href="/pages/about us.html">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 
+             -->
+        </div>
+
+        <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    
+</header>
+
+<main>
+    <section>
+        
+<h1 class="main-heading" >Privacy Policy for Scroll Neat</h1>
+<div class="paragraph">
+<p>At Scroll Neat, accessible from <a href="http://127.0.0.1:5500/Index.html" class="home-anchor">www.scrollneat.com</a>, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Scroll Neat and how we use it.</p>
+</div>
+<div class="paragraph">
+<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+</div>
+<div class="paragraph">
+<p>This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in Scorll Neat. This policy is not applicable to any information collected offline or via channels other than this website.<!--  Our Privacy Policy was created with the help of the <a href="https://www.generateprivacypolicy.com/">Privacy Policy Generator</a>.--></p> 
+</div>
+<br>
+<h2 class="heading">Consent</h2>
+<div class="paragraph">
+<p>By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+</div>
+<br>
+<h2 class="heading">Information we collect</h2>
+<div class="paragraph">
+<p>The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+</div><br>
+<div class="paragraph">
+<p>If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+</div>
+<div class="paragraph">
+<p>When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+</div>
+<br>
+<h2 class="heading">How we use your information</h2>
+<div class="paragraph">
+<p>We use the information we collect in various ways, including to:</p>
+
+<ul class="list">
+<li>Provide, operate, and maintain our website</li>
+<li>Improve, personalize, and expand our website</li>
+<li>Understand and analyze how you use our website</li>
+<li>Develop new products, services, features, and functionality</li>
+<li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+<li>Send you emails</li>
+<li>Find and prevent fraud</li>
+</ul>
+</div>
+<br>
+<h2 class="heading">Log Files</h2>
+<div class="paragraph">
+<p>Scroll Neat follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services' analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users' movement on the website, and gathering demographic information.</p>
+</div>
+<br>
+<h2 class="heading">Google DoubleClick DART Cookie</h2>
+<div  class="paragraph">
+ <p>Google is one of a third-party vendor on our site. It also uses cookies, known as DART cookies, to serve ads to our site visitors based upon their visit to www.website.com and other sites on the internet. However, visitors may choose to decline the use of DART cookies by visiting the Google ad and content network Privacy Policy at the following URL – </p> <p><a class="anchor" href="https://policies.google.com/technologies/ads">https://policies.google.com/technologies/ads</a></p>
+</div>
+<br>
+<h2 class="heading">Advertising Partners Privacy Policies</h2>
+<div class="paragraph">
+<P>You may consult this list to find the Privacy Policy for each of the advertising partners of Scroll Neat.</p>
+</div>
+<div class="paragraph">
+<p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Scroll Neat, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+</div>
+<div class="paragraph">
+<p>Note that Scroll Neat has no access to or control over these cookies that are used by third-party advertisers.</p>
+</div>
+<br>
+<h2 class="heading">Third Party Privacy Policies</h2>
+<div class="paragraph">
+<p>Scroll Neat's Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options. </p>
+</div>
+<div class="paragraph">
+<p>You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers' respective websites.</p>
+</div>
+<br>
+<h2 class="heading">CCPA Privacy Rights (Do Not Sell My Personal Information)</h2>
+<div class="paragraph">
+<p>Under the CCPA, among other rights, California consumers have the right to:</p>
+<p>Request that a business that collects a consumer's personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</p>
+</div>
+<div class="paragraph">
+<p>Request that a business delete any personal data about the consumer that a business has collected.</p>
+</div>
+<div class="paragraph">
+<p>Request that a business that sells a consumer's personal data, not sell the consumer's personal data.</p>
+</div>
+<div class="paragraph">
+<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+</div>
+<br>
+<h2 class="heading">GDPR Data Protection Rights</h2>
+<div class="paragraph">
+<p>We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+</div>
+<div class="paragraph">
+<p>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</p>
+</div>
+<div class="paragraph">
+<p>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</p>
+</div>
+<div class="paragraph">
+<p>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</p>
+</div>
+<div class="paragraph">
+<p>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</p>
+</div>
+<div class="paragraph">
+<p>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</p>
+<div class="paragraph">
+<p>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</p>
+</div>
+<div class="paragraph">
+<p>If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+</div>
+<br>
+<h2 class="heading">Children's Information</h2>
+<div class="paragraph">Paragrapher part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+</div>
+<div class="paragraph">
+<p>Scroll Neat does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records.</p>
+</div>
+     </section>
+     <div class="not-for-use">
+         
+     </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+            <h2 class="head-1">About us</h2>
+            <p>your number one source for all things . We're dedicated to giving you the very best of our work, with a focus on providing vauluable knowledge and Information.<a class="something" href="/about us.html">Read more</a></p>
+        </div>
+        <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+            <h2>Newsletter</h2>
+            <p>Stay update with our latest</p>
+            <div class="form-element">
+                <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+            </div>
+        </div>
+        <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+            <h2>Instagram</h2>
+            <div class="flex-row">
+                <img src="./assets/instagram/thumb-card3.png" alt="insta1">
+                <img src="./assets/instagram/thumb-card4.png" alt="insta2">
+                <img src="./assets/instagram/thumb-card5.png" alt="insta3">
+            </div>
+            <div class="flex-row">
+                <img src="./assets/instagram/thumb-card6.png" alt="insta4">
+                <img src="./assets/instagram/thumb-card7.png" alt="insta5">
+                <img src="./assets/instagram/thumb-card8.png" alt="insta6">
+            </div>
+        </div>
+        <div class="follow" data-aos="fade-left" data-aos-delay="200">
+            <h2>Follow us</h2>
+            <p>Let us be Social</p>
+            <div class="footer-icons">
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+    <div class="rights flex-row">
+        <h4 class="text-gray" >
+            Copyright ©2021 All rights reserved
+            <!-- Copyright ©2019 All rights reserved | made by
+            <a href="www.youtube.com/c/dailytuition" target="_black">Daily Tuition <i class="fab fa-youtube"></i>
+                Channel</a> -->
+        </h4>
+    </div>
+    <div class="move-up" >
+      <span><a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a></span>
+    </div>
+  <div id="bottom"></div>
+</footer>
+
+</body>
+</html>

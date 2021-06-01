@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <title>Blooger</title> -->
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="/css/all.css">
+
+
+    <!-- --------- Owl-Carousel ------------------->
+   <link rel="stylesheet" href="/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="/css/owl.theme.default.min.css"> 
+
+    <!-- ------------ AOS Library ------------------------- -->
+    <link rel="stylesheet" href="./css/aos.css">
+
+    <!-- Custom Style   -->
+    <link rel="stylesheet" href="/css/Style.css">
+    <title>Form test</title>
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+  <link rel="stylesheet" href="/js/main.js">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+      body {
+  margin: 0;
+}
+
+.contact-container {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #023047;
+  padding: 48px 16px; 
+
+} 
+
+.contact-container .contact-left {
+  background: #2ec4b6;
+  padding: 32px 24px;
+  border-radius: 48px 0 5px 5px;
+  box-shadow: 0 5px 16px -2px rgba(0, 0, 0, 0.2);
+  height: 80vh;
+  width: 100vh;
+}
+
+.contact-container h2 {
+  margin-top: 8px;
+  margin-bottom: 32px;
+  font-size: 22px;
+}
+
+.contact-container h2.contact-left-heading {
+  color: #fff;
+}
+
+.contact-container .contact-left .form-element .form-input {
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  border: 0;
+  margin-bottom: 24px;
+  border-radius: 4px;
+  box-shadow: 0 5px 8px -2px rgba(0, 0, 0, 0.2);
+  font-family: "Roboto", sans-serif;
+}
+
+.contact-container .contact-left .form-element {
+  position: relative;
+}
+
+.contact-container .contact-left .form-element label {
+  position: absolute;
+  left: 16px;
+  transform: translateY(12px);
+  font-size: 14px;
+  color: #777;
+  transition: all 300ms;
+}
+
+.contact-container .contact-left .form-element label.active {
+  background: #023047;
+  transform: translate(-8px, -16px);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+
+}
+
+.contact-container .contact-left .form-btn {
+  background: #023047;
+  border: 0;
+  color: #fff;
+  padding: 10px 48px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 14px;
+  box-shadow: 0 5px 8px -2px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 300ms;
+}
+
+.contact-container .contact-left .form-btn:hover {
+  transform: scale(1.05);
+}
+
+.contact-container .contact-right {
+  padding-left: 32px;
+}
+
+.contact-container .contact-right .social-icons a {
+  font-size: 32px;
+  color: #023047;
+  margin-right: 12px;
+  display: inline-block;
+  transition: all 300ms;
+}
+
+.contact-container .contact-right .social-icons a:hover {
+  transform: scale(1.15);
+}
+
+@media (max-width: 600px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 32px;
+  }
+
+  .contact-container .contact-left {
+    border-radius: 0;
+    width: 100%;
+    padding: 16px 60px;
+  }
+
+  .contact-container .contact-right {
+    width: 100%;
+    padding: 48px 0;
+  }
+}
+main .now img{
+  width: 100%;
+  height: 55vh;
+  background-size: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.social-icons {
+  padding-right: 5rem;
+}
+.mailon :hover {
+ color:#2ec4b6;
+ text-decoration: underline;
+}
+main {
+  background-color: #f5f5f5;
+}
+.move-up span :hover{
+  color:white;
+}
+.something:hover {
+  color:red;
+  text-decoration: underline;
+}
+.head-1:hover{
+  text-decoration:underline; 
+  cursor: pointer;
+}
+.footer-icons{
+  padding: 1rem;
+}
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+        <input type="checkbox" name="" id="check">
+        
+        <div class="logo-container">
+            <h3 class="logo" id="top">SCROLL<span>NEAT.COM</span></h3>
+        </div>
+
+        <div class="nav-btn">
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-link" style="--i: .6s">
+                        <a href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-link" style="--i: .85s">
+                        <a href="#">Categories<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="#">Motivation</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Health</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Science & Technology</a>
+                                    
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Finance</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="#">Random</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.1s">
+                        <a href="#">Archives<i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown">
+                            <ul>
+                                <li class="dropdown-link">
+                                    <a href="/pages/contact.html">Contact us</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/pages/privacypolicy.html">Privacy Policy</a>
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/pages/terms&andcondition.html">Terms & Condition</a>
+                                    <!-- 
+                                           
+                                                       
+                                            
+                                    </div> -->
+                                </li>
+                                <li class="dropdown-link">
+                                    <a href="/pages/disclaimer.html">Disclaimer</a>
+                                </li>
+                                <div class="arrow"></div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-link" style="--i: 1.35s">
+                        <a href="/pages/about us.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hamburger-menu-container">
+            <div class="hamburger-menu">
+                <div></div>
+            </div>
+        </div>
+    </div>
+    <section class="contact">
+      
+    </section>
+</header>
+
+    <!-- ------------x--------------- Navigation -------x------------------- -->
+ <main> 
+    <div class="now">
+      <img src="/assets/picnew/1622213247739.jpg" alt="image"> 
+    </div>
+  
+    <div class="contact-container">
+      <div class="contact-left">
+       <div>
+        <h2 class="contact-left-heading">Contact Us Here</h2>
+        </div>
+        <!-- <form method="post" autocomplete="off" name="Contact US-sheet"> -->
+        <form method="POST" autocomplete="off" name="Contact US-sheet">
+          <div class="form-element">
+            <input type="text" name="name" id="contact-name" class="form-input" placeholder="Full Name" />
+            <!-- <label for="contact-name">Full Name</label> -->
+          </div>
+
+          <div class="form-element">
+            <input type="email" name="email" id="contact-email" class="form-input" placeholder="Email" />
+            <!-- <label for="contact-email">Email</label> -->
+          </div>
+
+          <div class="form-element">
+            <textarea
+              name="messages"
+              id="contact-message"
+              cols="30"
+              rows="10"
+              class="form-input"
+            placeholder="your Message"></textarea>
+            <!-- <label for="contact-message">Your Message</label> -->
+          </div>
+
+          <input type="submit" name="submit" class="form-btn" value="Send" />
+        </form>
+      </div>
+      <div class="contact-right">
+        <h2>contact info</h2>
+
+        <p>
+          <strong>Email Us:</strong>
+        </p>
+        <p class="mailon"><a href="mailto: scrollneat@gmail.com">scrollneat@gmail.com</a></p>
+        <br />
+        <p>
+          <strong>Send direct message:</strong>
+        </p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+</div>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxMq9i9aHo2DrwKaLyI3vGsCdepX6pJLvS9e-eBHLd80-bylBXK_J7-CkkmU-KUQr8v/exec'
+  const form = document.forms['Contact US-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!---
+<script>
+       const scriptURL = 'https://script.google.com/macros/s/AKfycbx2XHfCP2abroqOz2ppQOfvMTYsP62pXLBapHxIqG967PqUgJxGE4OtUJMwNhHezb1iVw/exec'
+            const form = document.forms['Contact US-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+<!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyoDPdm3WLXuCODysDw_9J3UK_I7Ks5lWg7O69JWd2bZ7cEGcnTPgor/exec'
+            const form = document.forms['hello-sheet']
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                .catch(error => console.error('Error!', error.message))
+            })
+          </script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+        
+<!-- script code -->
+  
+        <!-- var sheetName = 'Sheet1'
+    var scriptProp = PropertiesService.getScriptProperties()
+
+    function intialSetup () {
+      var activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+      scriptProp.setProperty('key', activeSpreadsheet.getId())
+    }
+
+    function doPost (e) {
+      var lock = LockService.getScriptLock()
+      lock.tryLock(10000)
+
+      try {
+      var doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+      var sheet = doc.getSheetByName(sheetName)
+
+      var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+      var nextRow = sheet.getLastRow() + 1
+
+      var newRow = headers.map(function(header) {
+        return header === 'timestamp' ? new Date() : e.parameter[header]
+      })
+
+      sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+      return ContentService
+        .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+        .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      catch (e) {
+      return ContentService
+        .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+        .setMimeType(ContentService.MimeType.JSON)
+      }
+
+      finally {
+      lock.releaseLock()
+      }
+    } -->
+</main>
+<footer class="footer">
+  <div class="container">
+      <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+          <h2 class="head-1">About us</h2>
+          <p>your number one source for all things . We're dedicated to giving you the very best of our work, with a focus on providing vauluable knowledge and Information.<a class="something" href="/about us.html">Read more</a>
+          </p>
+      </div>
+      <div class="newsletter" data-aos="fade-right" data-aos-delay="200">
+          <h2>Newsletter</h2>
+          <p>Stay update with our latest</p>
+          <div class="form-element">
+              <input type="text" placeholder="Email"><span><i class="fas fa-chevron-right"></i></span>
+          </div>
+      </div>
+      <div class="instagram" data-aos="fade-left" data-aos-delay="200">
+          <h2>Instagram</h2>
+          <div class="flex-row">
+              <img src="/assets/instagram/thumb-card3.png" alt="insta1">
+              <img src="/assets/instagram/thumb-card4.png" alt="insta2">
+              <img src="/assets/instagram/thumb-card5.png" alt="insta3">
+          </div>
+          <div class="flex-row">
+              <img src="/assets/instagram/thumb-card6.png" alt="insta4">
+              <img src="/assets/instagram/thumb-card7.png" alt="insta5">
+              <img src="/assets/instagram/thumb-card8.png" alt="insta6">
+          </div>
+      </div>
+      <div class="follow" data-aos="fade-left" data-aos-delay="200">
+          <h2>Follow us</h2>
+          <p>Let us be Social</p>
+          <div class="footer-icons">
+              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
+              
+          </div>
+      </div>
+  </div>
+  <div class="rights flex-row">
+      <h4 class="text-gray" >
+          Copyright ©2021 All rights reserved
+          <!-- Copyright ©2019 All rights reserved | made by
+          <a href="www.youtube.com/c/dailytuition" target="_black">Daily Tuition <i class="fab fa-youtube"></i>
+              Channel</a> -->
+      </h4>
+  </div>
+  <div class="move-up" >
+    <span><a href="#top"><i class="fas fa-arrow-circle-up fa-2x"></i></a></span>
+  </div>
+<div id="bottom"></div>
+</footer>
+</body>
+</html>
